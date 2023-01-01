@@ -1,0 +1,17 @@
+{
+  "name": "@sst-test/prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "dotenv -e .env.development -- node doggos.js",
+    "migrate:dev": "dotenv -e ../../.env.development prisma migrate dev",
+    "migrate:prod": "dotenv -e ../../.env.production prisma migrate deploy"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.8.0",
+    "prisma": "^4.8.0"
+  },
+  "devDependencies": {}
+}

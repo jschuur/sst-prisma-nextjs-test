@@ -1,0 +1,11 @@
+{
+  "name": "@sst-test/services",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@sst-test/prisma": "1.0.0",
+    "aws-sdk": "^2.1269.0"
+  },
+  "devDependencies": {}
+}

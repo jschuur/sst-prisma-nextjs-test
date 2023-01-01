@@ -1,0 +1,7 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2015
+  },
+  "ignorePatterns": ["apps/serverless/.sst", "apps/serverless/.build"]
+}

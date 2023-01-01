@@ -1,0 +1,20 @@
+{
+  "name": "sst-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev:site": "yarn workspace @sst-test/site dev",
+    "dev:sst": "yarn workspace @sst-test/serverless start",
+    "dev": "concurrently yarn:dev:*",
+    "deploy:sst": "yarn workspace @sst-test/serverless deploy"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "dotenv-cli": "^6.0.0"
+  },
+  "dependencies": {},
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

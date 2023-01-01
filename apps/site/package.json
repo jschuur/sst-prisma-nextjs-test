@@ -1,0 +1,27 @@
+{
+  "name": "@sst-test/site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "dotenv -e ../../.env.development -- next dev",
+    "dev:prod": "dotenv -e ../../.env.production -- next dev",
+    "build:dev": "dotenv -e ../../.env.development next dev -- next build",
+    "build:prod": "dotenv -e ../../.env.production next dev -- next build",
+    "build": "next build",
+    "start:dev": "dotenv -e ../../.env.development next dev -- next start",
+    "start:prod": "dotenv -e ../../.env.production next dev -- next start",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "13.1.1",
+    "@sst-test/prisma": "1.0.0",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "next": "13.1.1",
+    "next-superjson-plugin": "^0.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "superjson": "^1.12.1"
+  }
+}

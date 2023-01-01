@@ -1,0 +1,30 @@
+{
+  "name": "@sst-test/serverless",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "dotenv -e ../../.env.development -- sst start",
+    "build": "sst build",
+    "deploy": "dotenv -e ../../.env.production -- sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "test": "sst bind -- vitest run"
+  },
+  "devDependencies": {
+    "@serverless-stack/cli": "^1.18.4",
+    "@serverless-stack/resources": "^1.18.4",
+    "@tsconfig/node16": "^1.0.3",
+    "aws-cdk-lib": "2.50.0",
+    "dotenv-cli": "^6.0.0",
+    "typescript": "^4.9.4",
+    "vitest": "^0.26.2"
+  },
+  "dependencies": {
+    "@serverless-stack/node": "^1.18.4"
+  },
+  "workspaces": [
+    "services",
+    "packages/*",
+    "apps/*"
+  ]
+}
